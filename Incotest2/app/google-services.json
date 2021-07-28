@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "255802152844",
+    "project_id": "inco-test-2",
+    "storage_bucket": "inco-test-2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:255802152844:android:9d3db2dca56b2417b728a9",
+        "android_client_info": {
+          "package_name": "com.dcpappsolution.incotest2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "255802152844-88v5ab13j74qojkn1fhc1nq6fialga7g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzIWrz1yN40oBWYZS-RgRKeVAtRZGaCUs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "255802152844-88v5ab13j74qojkn1fhc1nq6fialga7g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

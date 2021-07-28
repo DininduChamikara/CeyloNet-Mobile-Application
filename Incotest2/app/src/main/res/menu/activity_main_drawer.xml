@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        ///////////// Buyers items ///////////////
+        <item
+            android:id="@+id/nav_buyer_home"
+            android:icon="@drawable/ic_menuhome"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_buyer_profile"
+            android:icon="@drawable/menu_person"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_buyer_favourite"
+            android:icon="@drawable/icon_favourite"
+            android:title="Favourite" />
+
+        <item
+            android:id="@+id/nav_add_request"
+            android:icon="@drawable/icon_add_request"
+            android:title="Add Request"/>
+
+        <item
+            android:id="@+id/nav_my_request"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="My Request"
+            android:visible="false"/>
+
+        ///////////// sellers items ///////////////
+        <item
+            android:id="@+id/nav_seller_home"
+            android:icon="@drawable/ic_menuhome"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_seller_profile"
+            android:icon="@drawable/menu_person"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_seller_favourite"
+            android:icon="@drawable/icon_favourite"
+            android:title="Favourite" />
+
+        <item
+            android:id="@+id/nav_add_prod_service"
+            android:icon="@drawable/icon_add_new_product"
+            android:title="Add Product or Service"/>
+
+        <item
+            android:id="@+id/nav_my_prod_service"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/my_product_service"
+            android:visible="false"/>
+
+    </group>
+</menu>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F1F1"
+    tools:context=".activities.AddNewProductActivity">
+
+    <LinearLayout
+        android:id="@+id/top_layer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        tools:ignore="MissingConstraints">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/pop_img"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            app:riv_corner_radius="14dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/offers3"/>
+
+        <EditText
+            android:id="@+id/product_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_bg"
+            android:drawableLeft="@drawable/icon_title"
+            android:drawablePadding="10dp"
+            android:elevation="3dp"
+            android:hint="Product or Service Title"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_img"
+            app:layout_constraintWidth_percent=".8" />
+
+        <EditText
+            android:id="@+id/profile_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_bg"
+            android:drawableLeft="@drawable/icon_description"
+            android:drawablePadding="10dp"
+            android:elevation="3dp"
+            android:hint="Add a description"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_name"/>
+
+        <EditText
+            android:id="@+id/profile_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_bg"
+            android:drawableLeft="@drawable/icon_price"
+            android:drawablePadding="10dp"
+            android:elevation="3dp"
+            android:hint="Enter the Price"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_email"
+            app:layout_constraintWidth_percent=".8" />
+
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_layer">
+
+        <Button
+            android:id="@+id/cancel_btn"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:textColor="#98FB98"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/add_btn"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/add_btn"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:textAllCaps="false"
+            android:textColor="#FFD700"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
